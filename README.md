@@ -1,30 +1,112 @@
-# React + TypeScript + Vite
+# Invoice Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an Invoice Generator that allows users to register, login, and generate invoices. It provides a seamless interface for managing invoices efficiently.
 
-Currently, two official plugins are available:
+## Project Repositories
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Backend Repository: [Invoice Generator Backend](https://github.com/Yukti-J/Invoice-Generator-Server)
+- Frontend Repository: [Invoice Generator Frontend](https://github.com/Yukti-J/Invoice-Generator)
 
-## Expanding the ESLint configuration
+## Deployed URLs
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Frontend Deployed URL: [Invoice Generator Frontend](https://invoice-generator-yj.netlify.app/)
+- Backend Deployed URL: [Invoice Generator Backend](https://invoice-generator-server-nmky.onrender.com)
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Stack
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- React
+- Vite
+- TypeScript
+- Node.js
+- Express.js
+- MongoDB
+- Tailwind CSS
+- html2canvas
+- jsPDF
+
+## Documentation Links
+
+- [React Documentation](https://react.dev/learn)
+- [React Router Documentation](https://reactrouter.com/en/main)
+- [Vite Documentation](https://vitejs.dev/guide/)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [Node.js Documentation](https://nodejs.org/docs/latest/api/)
+- [Express.js Documentation](https://expressjs.com/en/starter/installing.html)
+- [MongoDB Atlas Documentation](https://www.mongodb.com/docs/atlas/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs/installation)
+- [html2canvas Documentation](https://html2canvas.hertzen.com/)
+- [jsPDF Documentation](https://www.npmjs.com/package/jspdf)
+
+## Features
+
+- User registration
+- User login
+- Invoice generation
+
+## Installation Steps
+
+### Frontend
+
+1. Clone the frontend repository:
+
+```bash
+git clone https://github.com/Yukti-J/Invoice-Generator.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate to the frontend directory:
+
+```bash
+cd Invoice-Generator
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+4. Replace `BASE_URL` in the backend_url.tsx file with `http://localhost:3001`
+   
+5. Run the development server:
+
+```bash
+npm run dev
+```
+
+### Backend
+
+1. Clone the backend repository:
+
+```bash
+git clone https://github.com/Yukti-J/Invoice-Generator-Server.git
+```
+   
+2. Navigate to the backend directory:
+
+```bash
+cd Invoice-Generator-Server
+```
+ 
+3. Install dependencies:
+   
+```bash
+npm install
+```
+
+4. Set up environment variables by creating a .env file and providing necessary configurations (e.g., MONGODB_URL, JWT_SECRET, PORT = 3001).
+
+5. Run the server:
+```bash
+npm start
+```
+
+6. The backend server should be running on http://localhost:3001.
+
+### Contributing
+
+Contributions to this project are welcome! Please feel free to submit issues or pull requests to the respective repositories.
+
+### Contact
+For any inquiries or support, please contact the project maintainer:
+
+Name: Yukti Jhawar
+Email: [yuktimj2002@gmail.com](yuktimj2002@gmail.com)
