@@ -20,7 +20,7 @@ const Login = () => {
         const userData = { email, password };
     
         try {
-          const response = await fetch(`${process.env.REACT_APP_BASE_URL}/login`, { 
+          const response = await fetch(`https://invoice-generator-server-nmky.onrender.com/login`, { 
             method: "POST",
             headers: {
               "Content-Type": "application/json",

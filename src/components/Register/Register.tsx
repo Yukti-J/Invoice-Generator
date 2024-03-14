@@ -18,7 +18,7 @@ const Register: React.FC = () => {
         const userData = { name, email, password };
     
         try {
-          const response = await fetch(`${process.env.REACT_APP_BASE_URL}/register`, {
+          const response = await fetch(`https://invoice-generator-server-nmky.onrender.com/register`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

@@ -55,7 +55,7 @@ const Invoice = () => {
 
   const getProducts = async () => {
     const response = await fetch(
-      `${process.env.REACT_APP_BASE_URL}/${invoiceId}/getProducts`,
+      `https://invoice-generator-server-nmky.onrender.com/${invoiceId}/getProducts`,
       {
         method: "GET",
       }
@@ -69,7 +69,7 @@ const Invoice = () => {
     e.preventDefault();
     const userDataId = { userId };
     try {
-      const response = await fetch(`${process.env.REACT_APP_BASE_URL}/createInvoice`, {
+      const response = await fetch(`https://invoice-generator-server-nmky.onrender.com/createInvoice`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -102,7 +102,7 @@ const Invoice = () => {
       productRate,
     };
     try {
-      const response = await fetch(`${process.env.REACT_APP_BASE_URL}/createProduct`, {
+      const response = await fetch(`https://invoice-generator-server-nmky.onrender.com/createProduct`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -133,7 +133,7 @@ const Invoice = () => {
     const invoiceData = { invoiceId, subTotal, grandTotal };
     console.log(invoiceData)
     try {
-      const response = await fetch(`${process.env.REACT_APP_BASE_URL}/updateInvoice`, {
+      const response = await fetch(`https://invoice-generator-server-nmky.onrender.com/updateInvoice`, {
         method: 'PUT',
         headers: {
           "Content-Type": "application/json",
